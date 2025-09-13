@@ -1,3 +1,6 @@
+![License](https://img.shields.io/badge/License-MIT-green)
+![Python](https://img.shields.io/badge/Python-3.8-orange)
+
 # MapEXIF-Colab
 This repository provides a Google Colab notebook to read EXIF data (including GPS information) from images stored in a specific folder (e.g., on Google Drive) and visualize them on a map.
 

@@ -4,8 +4,10 @@
 # MapEXIF-Colab
 This repository provides a Google Colab notebook to read EXIF data (including GPS information) from images stored in a specific folder (e.g., on Google Drive) and visualize them on a map.
 
+![Demo Image](demo_image.png)
+
 ## Features
-- Extract EXIF metadata (latitude, longitude, altitude) from images (HEIC, JPEG, etc.).
+- Extract EXIF metadata (latitude, longitude) from images (HEIC, JPEG, etc.).
 - Convert GPS coordinates from DMS (Degree/Minute/Second) to decimal format.
 - Visualize locations on an interactive map using **folium**.
 - Compatible with Google Colab + Google Drive workflow.
@@ -15,8 +17,7 @@ The notebook installs necessary libraries automatically, but the core dependenci
 
 ```bash
 pip install folium
-pip install exifread==2.3.2
-pip install japanize-matplotlib
+pip install exifread
 ```
 
 ## Usage
@@ -29,17 +30,10 @@ pip install japanize-matplotlib
 3. Place your images (HEIC/JPEG) in a target folder inside your Drive.
 4. Update the `img_directory` path in the notebook to match your image folder.
 5. Run all cells.  
-   - The notebook will read EXIF data, extract GPS coordinates, and calculate distances.  
-   - Results will be printed as:
-
-   ```
-   FILE:IMG_0001, LAT:35.12345 LON:139.12345
-   ```
-
 6. Visualize the extracted coordinates on an interactive map using **folium**.
 
 ## Example Output
-- Console log of file names with GPS/altitude.
+- Console log of file names with GPS.
 - Interactive map with markers at photo locations.
 
 ## File Structure

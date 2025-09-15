@@ -7,7 +7,7 @@ This repository provides a Google Colab notebook to read EXIF data (including GP
 ![Demo Image](demo_image.png)
 
 ## Features
-- Extract EXIF metadata (latitude, longitude) from HEIC　images.
+- Extract EXIF metadata (latitude, longitude) from HEIC images.
 - Convert GPS coordinates from DMS (Degree/Minute/Second) to decimal format.
 - Visualize locations on an interactive map using **folium**.
 - Compatible with Google Colab + Google Drive workflow.

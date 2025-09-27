@@ -1,5 +1,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Python](https://img.shields.io/badge/Python-3.8-orange)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yukinak/MapExif-colab/blob/main/MapEXIF_colab.ipynb)
+
 
 # MapEXIF-Colab
 This repository provides a Google Colab notebook to read EXIF data (including GPS information) from images stored in a specific folder (e.g., on Google Drive) and visualize them on a map.
@@ -9,19 +11,21 @@ This repository provides a Google Colab notebook to read EXIF data (including GP
 ## Features
 - Extract EXIF metadata (latitude, longitude) from HEIC images.
 - Convert GPS coordinates from DMS (Degree/Minute/Second) to decimal format.
-- Visualize locations on an interactive map using **folium**.
+- Visualize locations on an interactive map using **[Folium](https://python-visualization.github.io/folium/latest/)**.
 - Compatible with Google Colab + Google Drive workflow.
 
 ## Requirements
 The notebook installs necessary libraries automatically, but the core dependencies are:
 
 ```bash
-pip install folium
 pip install exifread
+pip install folium
 ```
 
 ## Usage
 1. Open the notebook `MapEXIF_colab.ipynb` in **Google Colab**.
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yukinak/MapExif-colab/blob/main/MapEXIF_colab.ipynb)
+
 2. Mount Google Drive:
    ```python
    from google.colab import drive
@@ -43,9 +47,8 @@ pip install exifread
 ```
 
 ## Notes
-- Works with iPhone images (HEIC) as well as other formats containing GPS EXIF metadata.
+- Works with HEIC images as well as other formats containing GPS EXIF metadata.
 - If an image lacks GPS information, it will be skipped with a warning message.
-- Altitude extraction may vary depending on EXIF data availability.
 
 ## License
 MIT License
